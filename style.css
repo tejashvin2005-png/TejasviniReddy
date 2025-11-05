@@ -101,7 +101,7 @@ nav ul li {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    border-radius: 50px; /* Pill shape for modern look */
+    border-radius: 50px; 
     margin: 10px;
     font-weight: 500;
     text-transform: uppercase;
@@ -174,9 +174,48 @@ nav ul li {
 
 .project-card h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
     font-weight: 700;
 }
+
+/* Project Card Content Specific Styles */
+.project-title-ai {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.project-type {
+    display: block;
+    font-size: 0.8rem;
+    color: #6c757d; 
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.project-card ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.project-card ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.project-card ul li::before {
+    content: '▪'; /* Diamond bullet point */
+    position: absolute;
+    left: 0;
+    color: var(--accent-color); 
+    font-size: 1.1rem;
+    line-height: 1;
+}
+/* End Project Card Content Specific Styles */
+
 
 .tags {
     margin-top: 15px;
@@ -281,9 +320,38 @@ nav ul li {
     font-weight: 400;
 }
 
+/* Certifications Section (NEW STYLES) */
+.certs-section {
+    background-color: var(--secondary-bg);
+    text-align: center;
+}
+
+.certs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert-item {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.cert-item:hover {
+    background-color: #005a8d;
+}
+
+
 /* Footer (Contact) */
 footer {
-    background: #2c3e50; /* Dark, professional footer */
+    background: #2c3e50; 
     color: white;
     text-align: center;
     padding: 40px 0;
